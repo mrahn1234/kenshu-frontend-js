@@ -1,8 +1,7 @@
 $(document).ready(function () {
-    $('.thumb-item').mouseenter(function(){
-        $('.is-active').removeClass('is-active');
-        $(this).find('img').addClass('is-active');
-        let path = $(this).find('img').attr('src');
-        $('.main img').attr('src', path.replace('_small', '_large'));
-    })
-})
+  $(".thumb-item").mouseenter((e) => {
+    $(".is-active").removeClass("is-active");
+    let path = $(e.target).attr("src");
+    if (path) $(".main img").attr("src", path.replace("_small", "_large"));
+  });
+});
