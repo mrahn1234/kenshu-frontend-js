@@ -1,9 +1,10 @@
-var modal_open = () => {
+// Opening model
+let modal_open = () => {
     document.querySelector('#modal-overlay').classList.add('is-active');
     document.querySelector('#modal-content').classList.add('is-active');
 }
-
-var modal_close = () => {
+// Closing model
+let modal_close = () => {
     document.querySelector('#modal-overlay').classList.remove('is-active');
     document.querySelector('#modal-content').classList.remove('is-active');
 }

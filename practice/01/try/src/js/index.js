@@ -1,4 +1,4 @@
-var result = {};
+let result = {};
 Object.assign(
   result,
   {

@@ -1,5 +1,5 @@
 function fetchData(data) {
-  var list = document.getElementById("list");
+  let list = document.getElementById("list");
   data.forEach((item) => {
     let li_item = document.createElement("li");
     let title = document.createElement("h3");
